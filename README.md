@@ -59,8 +59,6 @@ This is a downloader and archive manager, **not** a complete mirror of every sit
 
 ## 2. Packages and privacy
 
-Two release variants have been distributed for v3.4. **Full Private** contains the owner's preserved session databases, saved Telegram API configuration, download state, and historical settings. Treat it like a credential-bearing backup. Anyone receiving a usable Telegram `.session` file may be able to access that account. Never post this package to a public repository, file host, forum, or Discord channel.
-
 **Clean Source** contains application code, dependencies, installer, tests, and documentation, without the owner's account sessions and private configurations. It is the appropriate starting point for a fresh user or a source-code review. The installer is included in the release packages. Do not assume that a clean-source ZIP contains previously imported archives such as `content.txt`; choose your own TXT file if needed.
 
 Neither package is an offline Windows EXE. `INSTALL.bat` prepares the Python environment and launches the desktop application. Passwords, Telegram codes, Google tokens, and OAuth JSON files should never be pasted into public support messages. Screenshots should conceal phone numbers, API IDs and hashes, and local access tokens where relevant.
